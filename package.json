@@ -1,0 +1,49 @@
+{
+  "name": "@timeholder/asset-locker",
+  "version": "1.1.1",
+  "description": "Features have been expanded based on the AssetBox.",
+  "license": "MIT",
+  "scripts": {
+    "build": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "flatten": "mkdir -p dist/contracts && npm run flatten:AssetLocker",
+    "flatten:AssetLocker": "npx hardhat flatten contracts/AssetLocker.sol > dist/contracts/AssetLocker.sol",
+    "release": "npm run test && npm run build && tsc && npm run flatten && npm publish --access public",
+    "deploy:test": "npx hardhat run scripts/deploy.ts --network hardhat"
+  },
+  "keywords": [
+    "assetlocker",
+    "asset-locker",
+    "eth",
+    "eth-contract",
+    "ethereum",
+    "ethereum-contract",
+    "evm",
+    "smart-contract",
+    "timeholder"
+  ],
+  "homepage": "https://github.com/time-holder/asset-locker#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/time-holder/asset-locker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/time-holder/asset-locker/issues"
+  },
+  "files": [
+    "contracts",
+    "artifacts/contracts",
+    "!artifacts/contracts/**/*.dbg.json",
+    "dist"
+  ],
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox-viem": "^3.0.0",
+    "chai": "^4.4.1",
+    "dotenv": "^16.4.5",
+    "hardhat": "^2.22.2"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.2",
+    "@timeholder/asset-box": "^1.1.15"
+  }
+}
