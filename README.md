@@ -96,8 +96,8 @@ const walletClient = createWalletClient({
     abi,
     bytecode,
     args: [
-      '<YOUR_PUBLIC_KEY>', // Your wallet address
-      '<YOUR_GUARDIAN_PUBLIC_KEY>', // Guardian's wallet address
+      '<YOUR_WALLET_ADDRESS>',
+      '<YOUR_GUARDIAN_WALLET_ADDRESS>',
       31_536_000 // Lock-in period in seconds
     ]
   })
