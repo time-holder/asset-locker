@@ -1,10 +1,10 @@
-# 🔒 AssetLocker
+# 🔒 Asset Locker
 
 [![npm version](https://img.shields.io/npm/v/@timeholder/asset-locker/latest.svg)](https://www.npmjs.com/package/@timeholder/asset-locker)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Tests](https://github.com/time-holder/asset-locker/actions/workflows/tests.yml/badge.svg)](https://github.com/time-holder/asset-locker/actions/workflows/tests.yml)
 
-💪 Features have been expanded based on the [AssetBox](https://github.com/time-holder/asset-box).
+🔌 Features have been expanded based on the [AssetBox](https://github.com/time-holder/asset-box).
 
 ## 🤔 Why Use
 

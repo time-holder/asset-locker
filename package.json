@@ -1,6 +1,6 @@
 {
   "name": "@timeholder/asset-locker",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "Features have been expanded based on the AssetBox.",
   "license": "MIT",
   "scripts": {
