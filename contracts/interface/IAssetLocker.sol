@@ -5,11 +5,18 @@ interface IAssetLocker {
   event GuardianshipTransferred(address indexed previousGuardian, address indexed newGuardian);
   event UpdateUnlockTime(uint256 unlockTime);
 
+  /**
+   * @dev Returns the current guardian's address.
+   */
   function guardian() external view returns (address);
+
+  /**
+   * @dev Returns the block timestamp of the unlock time.
+   */
   function unlockTime() external view returns (uint256);
 
   /**
-   * @dev The return value indicates whether it has been unlocked.
+   * @dev Returns whether it has already been unlocked.
    */
   function isUnlocked() external view returns (bool);
 
